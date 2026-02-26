@@ -1,13 +1,388 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>michell.dev</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Michell Goris – Backend & ML-Systems</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Personal site of Michell Goris, a backend engineer building toward machine learning systems."
+  />
+
+  <!-- Fonts: IBM Plex Sans & Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles/global.css" />
+  <link rel="stylesheet" href="./styles/layout.css" />
+  <link rel="stylesheet" href="./styles/animations.css" />
+
+  <!-- Main JS (ES module) -->
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="logo-mark">
+        <span class="logo-symbol">&lt;MG/&gt;</span>
+      </div>
+      <nav class="site-nav">
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#ml-journey" class="nav-link">ML Journey</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero-section">
+      <div class="hero-inner container">
+        <!-- Left: abstract ML network animation -->
+        <div class="hero-visual">
+          <canvas id="networkCanvas" aria-hidden="true"></canvas>
+        </div>
+
+        <!-- Right: content -->
+        <div class="hero-content">
+          <p class="hero-kicker">BACKEND &amp; ML-FOCUSED ENGINEER</p>
+          <h1 class="hero-name">Michell Goris</h1>
+          <p class="hero-title">
+            Backend engineer building toward machine learning systems.
+          </p>
+          <p class="hero-body">
+            I come from DevOps, so I care about reliability, automation, and how
+            ML fits into real-world systems—not just notebooks. I like
+            designing the invisible infrastructure that lets products scale.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View my work</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section id="what-i-do" class="section">
+      <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="section-grid two-columns">
+          <p class="section-lead">
+            I design systems that reduce friction: fewer manual steps, clearer
+            data flow, more reliable outcomes.
+          </p>
+          <ul class="bullet-list">
+            <li>
+              <span class="bullet-label">Automation</span>
+              I turn repetitive, manual workflows into reliable pipelines.
+            </li>
+            <li>
+              <span class="bullet-label">Backend Systems</span>
+              I think in APIs, data models, and how services talk to each
+              other.
+            </li>
+            <li>
+              <span class="bullet-label">ML Direction</span>
+              I’m deliberately moving toward applied ML and MLOps—how models
+              live inside production systems.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <header class="experience-header">
+              <div>
+                <h3 class="experience-role">DevOps Engineer II</h3>
+                <p class="experience-company">Humana · Remote</p>
+              </div>
+              <span class="experience-dates">2025 – Present</span>
+            </header>
+            <ul class="experience-points">
+              <li>
+                Designed and implemented deployment workflows where none
+                previously existed, giving the team a repeatable, documented
+                process.
+              </li>
+              <li>
+                Automated configuration and reporting tasks to reduce manual work
+                and improve reliability.
+              </li>
+              <li>
+                Partnered with engineering teams to ensure changes are observable,
+                auditable, and sustainable over time.
+              </li>
+            </ul>
+          </article>
+
+          <!-- Add more roles later -->
+        </div>
+      </div>
+    </section>
+        <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <h3 class="education-degree">
+              M.S. in Computer Science <span class="education-tag">Machine Learning Specialization</span>
+            </h3>
+            <div class="education-meta">
+              <span class="education-school">TBD University</span>
+              <span class="education-year">Starting 2026</span>
+            </div>
+            <p class="education-note">
+              Planned graduate study focused on applied machine learning and ML systems to deepen my theoretical
+              foundation and connect it to real-world infrastructure.
+            </p>
+          </article>
+
+          <article class="education-item">
+            <h3 class="education-degree">B.S. in Software Engineering</h3>
+            <div class="education-meta">
+              <span class="education-school">Western Governors University</span>
+              <span class="education-year">2026</span>
+            </div>
+            <p class="education-note">
+              Focused on backend development, data management, software architecture, and building production-ready systems.
+            </p>
+          </article>
+
+          <article class="education-item">
+            <h3 class="education-degree">A.S. in Computer Science</h3>
+            <div class="education-meta">
+              <span class="education-school">Brunswick Community College</span>
+              <span class="education-year">2023</span>
+            </div>
+            <p class="education-note">
+              Built my foundations in programming, problem solving, and core CS concepts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <p class="section-lead">
+          I’m focusing on building a small number of systems from scratch that
+          teach me more about backend design and ML in production.
+        </p>
+
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-label">In progress</div>
+            <h3 class="card-title">Grounded</h3>
+            <p class="card-body">
+              An accountability engine for engineers that tracks real work
+              instead of streaks, with a backend focused on events, scoring,
+              and feedback. Technical breakdown coming soon.
+            </p>
+            <div class="card-meta">
+              <span class="chip">Backend</span>
+              <span class="chip">Events</span>
+              <span class="chip">Scoring</span>
+            </div>
+          </article>
+
+          <article class="card card-muted">
+            <div class="card-label">Coming soon</div>
+            <h3 class="card-title">ML-Backed System #1</h3>
+            <p class="card-body">
+              A small but complete ML system—from data to deployment—that
+              focuses on how predictions plug into a real service.
+            </p>
+            <div class="card-meta">
+              <span class="chip">ML</span>
+              <span class="chip">APIs</span>
+              <span class="chip">MLOps</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills &amp; Toolbox</h2>
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3 class="skills-heading">Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>JavaScript</li>
+              <li>Bash</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-heading">Backend &amp; Data</h3>
+            <ul>
+              <li>RESTful APIs</li>
+              <li>Relational databases</li>
+              <li>Data modeling</li>
+              <li>Job scheduling &amp; automation</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-heading">DevOps &amp; Infra</h3>
+            <ul>
+              <li>Azure DevOps</li>
+              <li>CI/CD</li>
+              <li>Git &amp; GitHub</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h3 class="skills-heading">ML Foundations</h3>
+            <ul>
+              <li>Python for data</li>
+              <li>NumPy &amp; pandas (learning)</li>
+              <li>ML fundamentals (in progress)</li>
+              <li>MLOps concepts (in progress)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ML JOURNEY -->
+    <section id="ml-journey" class="section">
+      <div class="container">
+        <h2 class="section-title">ML Journey</h2>
+        <div class="section-grid two-columns">
+          <p class="section-lead">
+            I’m moving deliberately from DevOps and backend work into applied
+            machine learning and ML systems.
+          </p>
+          <div class="ml-roadmap">
+            <div class="ml-stage">
+              <h3>Now</h3>
+              <ul>
+                <li>Strengthening data structures &amp; algorithms.</li>
+                <li>Deepening SQL and database design.</li>
+                <li>Practicing clean, testable backend code.</li>
+              </ul>
+            </div>
+            <div class="ml-stage">
+              <h3>Next</h3>
+              <ul>
+                <li>Supervised &amp; unsupervised learning basics.</li>
+                <li>Evaluation metrics and model selection.</li>
+                <li>End-to-end ML experiments with real data.</li>
+              </ul>
+            </div>
+            <div class="ml-stage">
+              <h3>Later</h3>
+              <ul>
+                <li>Model deployment and serving.</li>
+                <li>MLOps tooling &amp; monitoring.</li>
+                <li>Designing production ML systems.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-grid two-columns">
+          <p class="section-lead">
+            I like building infrastructure for intelligence—systems that make it
+            easier to do the right work, at the right time, with the right data.
+          </p>
+          <div class="section-text">
+            <p>
+              I started from DevOps and automation, which means reliability,
+              observability, and repeatability are non-negotiable to me. I’m
+              comfortable close to the metal of deployment pipelines and
+              internal tooling.
+            </p>
+            <p>
+              Now I’m moving deeper into backend and machine learning, with a
+              focus on how models fit into real product flows instead of living
+              as isolated notebooks. I care a lot about the architecture around
+              ML, not just the model itself.
+            </p>
+            <p>
+              Outside of work, I treat learning like a long-term project: I
+              build small tools for myself, experiment, and document what I’m
+              learning so I can move with intention, not just vibes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">
+          Open to backend-leaning roles and opportunities that involve ML
+          systems, infrastructure, or thoughtful automation.
+        </p>
+        <div class="contact-links">
+          <!-- Replace these with your real links -->
+          <a href="mailto:youremail@example.com" class="contact-link">
+            Email
+          </a>
+          <a
+            href="https://github.com/your-github"
+            class="contact-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/your-linkedin"
+            class="contact-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
+          <a href="#" class="contact-link muted-link">
+            Resume (coming soon)
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-text">
+        © <span id="year"></span> Michell Goris · Built with intention
+      </span>
+    </div>
+  </footer>
+</body>
 </html>
